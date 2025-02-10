@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MI8</title>
-    <link rel="stylesheet" href="styless.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MI8 Global Security Consulting</title>
+        <link rel="stylesheet" href="styless.css">
+        <link rel="icon" href="resources/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
         <div class="banner-section">
-            <div class="logo">
-                <h1>MI8</h1>
+            <div class="logo-container">
+                <img src="resources/compass.png" class="logo-image" />
+                <div>M.I.VIII</div>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#mission">Mission</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="mission-section" id="mission">
-            <h2>Our Mission</h2>
-            <p>
-                We aim to foster economic growth, improve global security, and empower communities through education,
-                security analysis, and advocacy for free movement across African nations.
-            </p>
-        </div>
-        <div class="hero-section">
-            <div class="hero-overlay">
-                <h1>MI8</h1>
-                <p>Global Security & Economic Stability</p>
+            <video autoplay loop muted class="mission-video-background">
+                <source src="resources/africa_compressed.mp4" type="video/mp4">
+            </video>
+            <div class="mission-content">
+                <div class="mission-title bold">Our Mission</div>
+                <div class="mission-statement thin">
+                    We aim to foster economic growth, improve global security, and empower communities through education,
+                    security analysis, and advocacy for free movement across <span class="bold">African</span> nations.
+                </div>
+                <a href="mailto:info@miviii.com">
+                    <button class="mission-button bold">Get Involved</button>
+                </a>
             </div>
         </div>
-        <div class="services-section" id="services">
-            <h2>What We Do</h2>
-            <ul>
-                <li><strong>Strategic Security Analysis:</strong> Comprehensive evaluations to support stability and investment.</li>
-                <li><strong>Educational Initiatives:</strong> Programs that empower communities and drive innovation.</li>
-                <li><strong>Cross-Cultural Collaboration:</strong> Bridging gaps to promote mutual understanding and cooperation.</li>
-                <li><strong>Advocacy for Free Movement:</strong> Supporting policies for mobility and innovation across Africa.</li>
-            </ul>
+        <div class="service-section" id="services">
+            <div class="service-box-container">
+                <div class="service-box">
+                    <img src="resources/bar-chart.png" class="service-icon" />
+                    <div class="service-title bold">Strategic Security Analysis</div> 
+                    <div class="service-description thin">Comprehensive evaluations to support stability and investment.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/human-resource.png" class="service-icon" />
+                    <div class="service-title bold">Educational Initiatives</div> 
+                    <div class="service-description thin">Programs that empower communities and drive innovation.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/politics.png" class="service-icon" />
+                    <div class="service-title bold">Cross-Cultural Collaboration</div>
+                    <div class="service-description thin">Bridging gaps to promote mutual understanding and cooperation.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/africa.png" class="service-icon" />
+                    <div class="service-title bold">Advocacy for Free Movement</div>
+                    <div class="service-description thin">Supporting policies for mobility and innovation across Africa.</div>
+                </div>
+            </div>
         </div>
         <div class="contact-section" id="contact">
-            <h2>Contact Us</h2>
-            <p>We’re open to collaboration and new opportunities.</p>
-            <ul>
-                <li>Email: <a href="mailto:info@miviii.com">info@miviii.com</a></li>
-                <li>Phone: +123-456-7890</li>
-            </ul>
+            <div class="contact-title bold">Contact Us</div>
+            <div class="contact-description">We're open to collaboration and new opportunities.</div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <img src="resources/email.png" class="contact-icon" />
+                    <div>Email: <a href="mailto:info@miviii.com">info@miviii.com</a></div>
+                </div>
+            </div>
         </div>
-          <!-- Footer -->
-          <footer>
-            <p>&copy; 2025 MI8 Global Security Consulting LLC. All rights reserved.</p>
+        <footer>
+            <div>&copy; 2025 MI8 Global Security Consulting LLC. All rights reserved.</div>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
