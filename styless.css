@@ -1,128 +1,280 @@
-body, h1, p {
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
-.container {
-    background-color: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
-    height: 100vh;
+.bold {
+    font-weight: 800;
 }
 
-#header {
-    width: 100%;
-    height: 80px;
+.thin {
+    font-weight: 300;
+}
+
+/* Banner Section */
+.banner-section {
+    padding-inline: 70px;
     padding-block: 10px;
+    background-color: #333;
+    color: #fff;
+    position: static;
+    line-height: 50px;
+}
+
+.logo-container {
     display: flex;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-inline: 30px;
 }
 
-.email {
-    width: 35px;
-    height: 30px;
-    padding-inline-end: 20px;
-}
-
-.emailContainer {
-    display: flex;
-    padding-block-start: 45px;
-    line-height: 29px;
-    color: #fff;
-}
-
-.emailText {
-    font-weight: 600;
-    font-size: 14px;
-    width: 200px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 4px;
-    text-align: center;
-    letter-spacing: 1.5px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.emailText:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.headerTitle {
-    color: #fff;
-    font-size: 40px;
-    padding-inline-start: 20px;
-    padding-block-start: 15px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.logo {
-    width: 90px;
-    height: 90px;
-    padding-inline-start: 20px;;
-}
-
-.milogo {
-    width: 190px;
+.logo-image {
     height: 50px;
-    padding-inline-start: 20px;
-    padding-block-start: 20px;
+    margin-inline-end: 10px;
 }
 
-#main {
-    padding-inline-start: 50px;
-    width: 40%;
-    padding-block: 200px;
-}
-
-.almostReady {
-    font-size: 20px;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding-inline-start: 5px;
-    padding-block-end: 10px;
-}
-
-.hrule
-{
-    width: 600px;
-    height: 4px;
-    background-color: #e3e562;
-    margin-block-start: 10px;
-}
-
-.comingSoon {
-    color: #fff;
-    font-size: 100px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    width: 200px;
-    line-height: 90px;
-    padding-block-end: 10px;
+/* Mission Section */
+.mission-section {
+    padding: 50px;
     text-align: center;
+    color: #333;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.missionStatement {
+.mi8 {
     color: #fff;
-    font-size: 20px;
-    width: 600px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding-block-start: 15px;
-    padding-inline-start: 5px;
+    font-family: 'Abril Fatface', cursive;
 }
 
-.video-background {
+.mission-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+.mission-video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire background */
-    z-index: -1; /* Places the video behind other content */
+    object-fit: cover;
+    z-index: -1;
 }
+
+.mission-title {
+    font-size: 80px;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.mission-statement {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-block-start: 40px;
+    font-family: "Roboto", serif;
+    line-height: 28px;
+}
+
+.mission-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    margin-block-start: 50px;
+}
+  
+.mission-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mission-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 126, 95, 0.4);
+}
+
+.mission-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.service-section {
+    padding-block: 40px;
+    background-color: #f7f4f0;
+    color: #333;
+}
+
+.service-box-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.service-box {
+    width: 300px;
+    height: 200px;
+    margin-inline: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.service-icon {
+    width: 70px;
+    margin-block-end: 10px;
+}
+
+.service-title {
+    font-size: 18px;
+    margin-block-end: 5px;
+}
+
+.service-description {
+    font-family: "Roboto", serif;
+    line-height: 22px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+}
+.contact-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-title {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-family: "Roboto", serif;
+    padding-block-end: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    height: 30px;
+    margin-inline-end: 20px;
+}
+
+.contact-info {
+    font-family: "Roboto", serif;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    margin-block-end: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-section {
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .logo-container {
+        font-size: 24px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mission-section {
+        padding: 30px;
+        height: auto;
+    }
+
+    .mission-title {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mission-statement {
+        font-size: 16px;
+        padding-block-start: 20px;
+    }
+
+    .mission-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .service-section {
+        padding-block: 20px;
+    }
+
+    .service-box-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-container {
+        align-items: flex-start;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+

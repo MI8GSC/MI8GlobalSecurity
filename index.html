@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="styless.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <video class="video-background" autoplay muted loop>
-            <source src="resources/bg_compass.mp4" type="video/mp4" />
-        </video>
-         <div id="header">
-            <img src="resources/logo_compass.png" alt="logo" class="logo">
-            <img src="resources/logo_mi8.png" alt="logo" class="milogo">
-         </div>
-         <div id="main">
-            <div class="comingSoon">COMING SOON</div>
-            <div class="hrule"></div>
-            <div class="missionStatement">MI8 Global Security is launching soon. For any inquires, please reach out.</div>
-            <div class="emailContainer">
-                <img src="resources/logo_email.png" alt="email" class="email">
-                <a href="mailto:MYLES@GSC8.COM" class="emailText">MYLES@GSC8.COM</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MI8 Global Security Consulting</title>
+        <link rel="stylesheet" href="styless.css">
+        <link rel="icon" href="resources/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mission-section" id="mission">
+            <video autoplay loop muted class="mission-video-background">
+                <source src="resources/africa_compressed.mp4" type="video/mp4">
+            </video>
+            <div class="mission-content">
+                <div class="mission-title bold">M.I.VIII</div>
+                <div class="mission-statement thin">
+                    We aim to foster economic growth, improve global security, and empower communities through educational programs and security analysis.
+                </div>
+                <a href="mailto:info@miviii.com">
+                    <button class="mission-button bold">Get Involved</button>
+                </a>
             </div>
-         </div>
-    </div>
-</body>
+        </div>
+        <div class="service-section" id="services">
+            <div class="service-box-container">
+                <div class="service-box">
+                    <img src="resources/bar-chart.png" class="service-icon" />
+                    <div class="service-title bold">Strategic Security Analysis</div> 
+                    <div class="service-description thin">Comprehensive evaluations to support stability and investment.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/human-resource.png" class="service-icon" />
+                    <div class="service-title bold">Educational Initiatives</div> 
+                    <div class="service-description thin">Programs that empower communities and drive innovation.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/politics.png" class="service-icon" />
+                    <div class="service-title bold">Cross-Cultural Collaboration</div>
+                    <div class="service-description thin">Bridging gaps to promote mutual understanding and cooperation.</div>
+                </div>
+                <div class="service-box">
+                    <img src="resources/africa.png" class="service-icon" />
+                    <div class="service-title bold">Advocacy for Free Movement</div>
+                    <div class="service-description thin">Supporting policies for mobility and innovation across Africa.</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section" id="contact">
+            <div class="contact-title bold">Contact Us</div>
+            <div class="contact-description">We're open to collaboration and new opportunities.</div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <img src="resources/email.png" class="contact-icon" />
+                    <div>Email: <a href="mailto:info@miviii.com">myles@gsc8.org</a></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>&copy; 2025 MI8 Global Security Consulting LLC. All rights reserved.</div>
+        </footer>
+    </body>
 </html>
