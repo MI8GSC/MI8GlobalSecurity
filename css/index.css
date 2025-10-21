@@ -1078,3 +1078,272 @@ body {
   transform: scale(1.03);
   box-shadow: 0 6px 16px var(--shadow-gold-hover);
 }
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+@media (max-width: 968px) {
+  /* Header */
+  .main_header {
+    grid-template-columns: 1fr;
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  .site_logo {
+    max-height: 50px;
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .site_title {
+    display: none; /* Hide on mobile */
+  }
+
+  .header_nav {
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  .nav_menu {
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--bg-dark);
+    display: none;
+  }
+
+  .nav_menu.active {
+    display: flex;
+  }
+
+  .nav_menu li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav_menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav_menu a {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile_menu_toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  /* Hero */
+  .hero_section {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Sections */
+  .section {
+    padding: 40px 15px;
+  }
+
+  .section_container {
+    padding: 30px 20px;
+  }
+
+  .section_title {
+    font-size: 2rem;
+  }
+
+  .content_subtitle {
+    font-size: 1.5rem;
+  }
+
+  .section_description {
+    font-size: 1rem;
+  }
+
+  /* Content Layouts */
+  .content_layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content_image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Cards */
+  .card_grid,
+  .card_grid_three {
+    grid-template-columns: 1fr;
+  }
+
+  .info_card {
+    padding: 20px;
+  }
+
+  /* Advisors */
+  .advisor_content {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .advisor_image_container {
+    flex: 1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .advisor_bio {
+    gap: 15px;
+  }
+
+  .slider_controls {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .slider_btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  /* Pillars */
+  .pillars_layout {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .pillars_nav {
+    flex: 1;
+    width: 100%;
+  }
+
+  .pillar_content_area {
+    min-height: 300px;
+  }
+
+  .pillar_detail {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    padding: 25px;
+  }
+
+  .pillar_detail.active {
+    display: block;
+  }
+
+  .pillar_detail_title {
+    font-size: 1.5rem;
+  }
+
+  .pillar_detail p {
+    font-size: 1rem;
+  }
+
+  /* Education */
+  .education_section {
+    flex-direction: column;
+  }
+
+  .section_image {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .timeline_item {
+    padding: 20px;
+    padding-left: 25px;
+  }
+
+  .timeline_title {
+    font-size: 1.3rem;
+  }
+
+  /* Stats */
+  .stats_grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stat_number {
+    font-size: 3rem;
+  }
+
+  /* Partnership */
+  .partnership_layout {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .partnership_left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .card_grid_partnership {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact_layout {
+    flex-direction: column;
+  }
+
+  .contact_left,
+  .contact_middle,
+  .contact_right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .button_group {
+    flex-direction: column;
+  }
+
+  .btn,
+  .btn_contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .site_footer {
+    padding: 30px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .site_logo {
+    max-height: 40px;
+  }
+
+  .section_title {
+    font-size: 1.75rem;
+  }
+
+  .content_subtitle {
+    font-size: 1.3rem;
+  }
+
+  .section_description {
+    font-size: 0.95rem;
+  }
+
+  .pillar_nav_item {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+
+  .stat_number {
+    font-size: 2.5rem;
+  }
+}
